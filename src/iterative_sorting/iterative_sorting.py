@@ -37,7 +37,7 @@ def bubble_sort( arr ):
         # Start an inner loop through the array with 
         # a variable called j until i-1 (stop)
         for j in range(0, len(arr)-i-1):
-            # If arr[j] is greater than arr[j+i], swap those two values
+            # If arr[j] is greater than arr[j+1], swap those two values
             if(arr[j] > arr[j+1]):
                 temp = arr[j]
                 arr[j] = arr[j+1]
