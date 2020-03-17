@@ -32,10 +32,10 @@ def selection_sort( arr ):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-    # Start looping through the array with a variable called i
+    # Start looping through the array
     for i in range(len(arr)):
         # Start an inner loop through the array with 
-        # a variable called j until i-1 (stop)
+        # a variable called j until the end of the array (stop)
         for j in range(0, len(arr)-i-1):
             # If arr[j] is greater than arr[j+1], swap those two values
             if(arr[j] > arr[j+1]):
@@ -51,8 +51,10 @@ def count_sort( arr, maximum=-1 ):
     return arr
 
 
-# arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+
+print(len(arr)-1-1)
 
 # print(selection_sort(arr))
 
-# print(bubble_sort(arr))
+print(bubble_sort(arr))
